@@ -1,0 +1,18 @@
+ref: globo_acl_api
+name: Globo ACL API
+description: Stackstorm integration package for the Globo ACL API
+keyworkds:
+  - globo
+  - acl
+  - stackstorm
+  - integration
+version: 1.0.0
+python_versions:
+  - "3"
+dependencies:
+  - core
+
+author: Rodrigo Ribeiro
+email: ribeiro.rodrigo1989@gmail.com
+contribuitors:
+  - "Rodrigo Ribeiro <ribeiro.rodrigo1989@gmail.com>"
