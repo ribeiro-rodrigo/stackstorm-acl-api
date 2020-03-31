@@ -1,0 +1,57 @@
+name: access_create
+runner_type: python-script
+description: Create Access
+enabled: true
+entry_point: access_create.py
+parameters:
+  url:
+    type: string
+    description: "URL ACL API"
+    required: true
+  basickey:
+    type: string
+    description: "Authorization Basic base64"
+    required: true
+  action:
+    type: string
+    description: "Access action. Valid values are: permit or deny"
+    required: true
+  protocol:
+    type: string
+    description: "Access protocol. Valid values are: ip, tcp, udp, icmp. If defined"
+    required: true
+  source:
+    type: string
+    description: "Access source address. Only IPv4 and IPV6 addresses
+    are accepted and they must be registered within the network informed in the URI"
+    required: true
+  destination:
+    type: string
+    description: "Access destination address. Only IPv4 and IPV6 addresses are accepted and
+    they must be registered within NetworkAPI"
+    required: true
+  destPortOp:
+    type: string
+    description: "Accepts the operation values eq, range, lt and gt"
+    required: false
+  srcPortOp:
+    type: string
+    description: "Accepts the operation values eq, range, lt and gt"
+    required: false
+  destPortStart:
+    type: string
+    description: "Destination home port that will receive the defined rule"
+    required: false
+  srcPortStart:
+    type: string
+    description: "Initial port of the source that will receive the defined rule"
+    required: false
+  destPortEnd:
+    type: string
+    description: "Final destination port that will receive the rule"
+    required: false
+  srcPortEnd:
+    type: string
+    description: "Final source port that will receive the rule"
+    required: false
+
