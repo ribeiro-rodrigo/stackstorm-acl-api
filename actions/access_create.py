@@ -6,22 +6,23 @@ class AccessCreate(st2common.runners.base_action.Action):
     def __init__(self, config):
         super(AccessCreate, self).__init__(config=config)
 
-    def run(self, url, basickey, action, protocol, source, destination, destPortOp, srcPortOp,
-            destPortStart, srcPortStart, destPortEnd, srcPortEnd):
+    def run(self, url, basickey, action, protocol, source, destination,
+            destPortOp, srcPortOp, destPortStart, srcPortStart,
+            destPortEnd, srcPortEnd):
 
         return [
-            self.config.get('url'),
-            self.config.get('basickey'),
-            self.config.get('action'),
-            self.config.get('protocol'),
-            self.config.get('source'),
-            self.config.get('destination'),
-            self.config.get('destPortOp'),
-            self.config.get('srcPortOp'),
-            self.config.get('destPortStart'),
-            self.config.get('srcPortStart'),
-            self.config.get('destPortEnd'),
-            self.config.get('srcPortEnd'),
+            url,
+            basickey,
+            action,
+            protocol,
+            source,
+            destination,
+            destPortOp,
+            srcPortOp,
+            destPortStart,
+            srcPortStart,
+            destPortEnd,
+            srcPortEnd,
 
         ]
 
