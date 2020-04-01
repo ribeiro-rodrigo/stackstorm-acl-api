@@ -7,8 +7,8 @@ class AccessCreate(st2common.runners.base_action.Action):
         super(AccessCreate, self).__init__(config=config)
 
     def run(self, url, basickey, action, protocol, source, destination,
-            destPortOp, srcPortOp, destPortStart, srcPortStart,
-            destPortEnd, srcPortEnd):
+            dest_port_op, src_port_op, dest_port_start, src_port_start,
+            dest_port_end, src_port_end):
 
         return [
             url,
@@ -17,13 +17,12 @@ class AccessCreate(st2common.runners.base_action.Action):
             protocol,
             source,
             destination,
-            destPortOp,
-            srcPortOp,
-            destPortStart,
-            srcPortStart,
-            destPortEnd,
-            srcPortEnd,
-
+            dest_port_op,
+            src_port_op,
+            dest_port_start,
+            src_port_start,
+            dest_port_end,
+            src_port_end,
         ]
 
 
