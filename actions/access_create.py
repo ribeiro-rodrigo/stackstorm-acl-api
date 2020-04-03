@@ -49,7 +49,7 @@ class AccessCreate(st2common.runners.base_action.Action):
             url=url,
             data=access_json,
             headers={
-                "Authorization": f"basic {basickey}"
+                "Authorization": "basic "+basickey
             }
         )
 
