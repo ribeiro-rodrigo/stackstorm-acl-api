@@ -8,62 +8,50 @@ parameters:
     type: string
     description: "URL ACL API"
     required: true
-    position: 0
   basickey:
     type: string
     description: "Authorization Basic base64"
     required: true
-    position: 1
   action:
     type: string
     description: "Access action. Valid values are: permit or deny"
     required: true
-    position: 2
   protocol:
     type: string
     description: "Access protocol. Valid values are: ip, tcp, udp, icmp. If defined"
     required: true
-    position: 3
   source:
     type: string
     description: "Access source address. Only IPv4 and IPV6 addresses
     are accepted and they must be registered within the network informed in the URI"
     required: true
-    position: 4
   destination:
     type: string
     description: "Access destination address. Only IPv4 and IPV6 addresses are accepted and
     they must be registered within NetworkAPI"
     required: true
-    position: 5
-  destPortOp:
+  dest_port_op:
     type: string
     description: "Accepts the operation values eq, range, lt and gt"
     required: false
-    position: 6
-  srcPortOp:
+  src_port_op:
     type: string
     description: "Accepts the operation values eq, range, lt and gt"
     required: false
-    position: 7
-  destPortStart:
+  dest_port_start:
     type: string
     description: "Destination home port that will receive the defined rule"
     required: false
-    position: 8
-  srcPortStart:
+  src_port_start:
     type: string
     description: "Initial port of the source that will receive the defined rule"
     required: false
-    position: 9
-  destPortEnd:
+  dest_port_end:
     type: string
     description: "Final destination port that will receive the rule"
     required: false
-    position: 10
-  srcPortEnd:
+  src_port_end:
     type: string
     description: "Final source port that will receive the rule"
     required: false
-    position: 11
 
